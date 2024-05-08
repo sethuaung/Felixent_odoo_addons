@@ -1,0 +1,73 @@
+#formio_form_app {
+    margin: 0 auto;
+    padding-left: 4px;
+    padding-right: 4px;
+    clear: both;
+}
+
+#formio_form_loading {
+    background: url('/web/static/lib/select2/select2-spinner.gif') center center no-repeat;
+    height: 16px;
+    margin-top: 5%;
+}
+
+.formio_form_dock {
+    margin-bottom: .5rem;
+}
+
+.formio_form_dock * {
+    font-size: 14px;
+}
+
+.formio_form_dock ul {
+    list-style: none;
+}
+
+.formio_form_dock ul li {
+    float: left;
+    margin-left: 20px;
+}
+
+h3.formio_form_title {
+    color: #000;
+    font-size: 1.5em;
+}
+
+.formio_languages {
+    clear: both;
+    margin-bottom: 20px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.formio_languages button {
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    color: #000;
+    padding: 6px 10px 6px 10px;
+    box-shadow: none !important;
+    transition: none !important;
+}
+
+.btn.language_button_active {
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #000;
+}
+
+.formio_languages button:hover {
+    background-color: #d3d3d3;
+    border: 1px solid #c0c0c0;
+}
+
+/**
+  WORKAROUND
+  ----------
+  - Browser: Safari 16.6
+  - This fixes a Data Grid with Columns inside. The columns become too
+    narrow in Safari !
+  - GitHub issue: https://github.com/formio/formio.js/issues/5426
+**/
+
+#formio_form_app table.datagrid-table tbody tr td {
+    width: auto;
+}
